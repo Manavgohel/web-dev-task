@@ -1,0 +1,131 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Montserrat";
+}
+
+.headline {
+  text-align: center;
+  margin-top: 5%;
+  margin-bottom: 5%;
+}
+
+h1 {
+  font-size: 50px;
+}
+
+.headline p {
+  color: #2c7873;
+  font-size: 20px;
+  font-weight: 500;
+}
+
+img {
+  height: 250px;
+  width: 250px;
+  filter: grayscale(1);
+  border-radius: 50%;
+}
+
+img:hover {
+  filter: grayscale(0);
+  transition: 0.5s;
+  transform: scale(1.1);
+}
+
+.grid-container {
+  display: grid;
+  grid-template-areas: "card-1 card-2 card-3 card-4";
+  width: 75%;
+  margin: auto;
+  margin-right: 200px;
+  grid-gap: 30px;
+  margin-bottom: 50px;
+}
+
+.card-1 {
+  grid-area: card-1;
+}
+
+.card-2 {
+  grid-area: card-2;
+}
+
+.card-3 {
+  grid-area: card-3;
+}
+
+.card-4 {
+  grid-area: card-4;
+}
+
+.card-5 {
+  grid-area: card-5;
+}
+
+.card-6 {
+  grid-area: card-6;
+}
+
+.card-7 {
+  grid-area: card-7;
+}
+
+.card-8 {
+  grid-area: card-8;
+}
+
+span {
+  color: #2c7873;
+}
+
+.card {
+  text-align: center;
+}
+
+.info {
+  margin-top: 15px;
+}
+
+h3 {
+  color: #2c7873;
+}
+
+.info p {
+  font-size: 16px;
+  font-weight: 500;
+}
+
+.social-media span {
+  margin-right: 5px;
+  margin-top: 15px;
+}
+
+.social-media span:hover {
+  transform: scale(1.5);
+  transition: 0.5s;
+}
+
+@media (max-width: 1300px) {
+  .grid-container {
+    grid-template-areas:
+      "card-1 card-2"
+      "card-3 card-4";
+    margin-right: 100px;
+  }
+}
+
+@media (max-width: 700px) {
+  .grid-container {
+    grid-template-areas:
+      "card-1"
+      "card-2"
+      "card-3"
+      "card-4";
+    margin-right: 50px;
+  }
+}
